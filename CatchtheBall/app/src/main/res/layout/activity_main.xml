@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tiago.catchtheball.main">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/scoreLabel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Score: 0"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical" />
+        
+        <TextView
+            android:id="@+id/startLabel"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:fontFamily="casual"
+            android:text="@string/tap_to_start"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/box"
+            android:layout_width="72.5dp"
+            android:layout_height="62.5dp"
+            android:src="@drawable/frame8"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/green_ball"
+            android:layout_width="28dp"
+            android:layout_height="20dp"
+            android:src="@drawable/green_ball" />
+
+        <ImageView
+            android:id="@+id/red_ball"
+            android:layout_width="28dp"
+            android:layout_height="20dp"
+            android:src="@drawable/red_ball" />
+
+        <ImageView
+            android:id="@+id/bomb100"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/bomb100" />
+
+
+
+
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
